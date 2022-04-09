@@ -1,0 +1,101 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+    letter-spacing: .1em;
+  }
+  
+  
+  .menu{
+    position:fixed;
+    max-width:100%;
+    width: 300px;
+    height:100vh;
+    background: #224998;
+    color:#fff;
+    transition: .3s;
+  }
+  .menu.active {
+    width:70px;
+    overflow-x: hidden;
+    transition: .3s;
+  }
+  
+  .logo {
+    display:flex;
+  }
+  
+  .logo i{
+    width:30px;
+  }
+  
+  .menu-icon{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+     padding:20px;
+  }
+  
+  .menu.active .logo {
+    display:none;
+     transition: .6s;
+  }
+  .menu.active  #botao{
+    justify-content:center;
+    width:100%;
+    text-align:center;
+     transition: .6s;
+  }
+  
+  .menu-icon i:hover{
+    color: #224998;
+  }
+  
+  .menu ul{
+    margin-top:30px;
+  }
+  
+  .menu li i{
+    min-width: 50px;
+    text-align:center;
+  }
+  
+  .menu ul li{
+    list-style:none;
+    padding: 20px;
+    display:block;
+    width:100%;
+  }
+  
+  .menu.active ul{
+    background: #798eb7;
+    transition: .3s;
+  }
+  .menu.active li {
+    padding: 20px 0;
+    text-align:center;
+     transition: .6s;
+  }
+  .menu.active li i{
+     padding:10px;  
+     transition: .6s;
+  }
+  
+  .menu ul li:hover{
+    background:  #798eb7;
+    color:#224998;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    color: #224998;
+  }  
